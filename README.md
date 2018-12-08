@@ -36,8 +36,8 @@ path as the first argument.
 hadoop fs -mkdir -p src/main/resources/
 hadoop fs -copyFromLocal src/main/resources/
 hadoop fs -rm -r output/next_click
-hadoop jar target/click-stream-0.0.1.jar hadoop.NextClick src/main/resources/clickstream-enwiki-2018-10-abridged.tsv
 mvn clean install
+hadoop jar target/click-stream-0.0.1.jar hadoop.NextClick src/main/resources/clickstream-enwiki-2018-10-abridged.tsv
 ```
 
 ### Script Analysis (WIP)
