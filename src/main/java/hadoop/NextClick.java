@@ -14,7 +14,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class BreadCrumbs {
+public class NextClick {
 
     //maps the Wikipedia Clickstream input to K(prev) V(curr n) 
 	public static class TokenizerMapper extends
@@ -61,7 +61,7 @@ public class BreadCrumbs {
 		Configuration conf = new Configuration();
 
 		Job job = Job.getInstance(conf, "Next Click");
-		job.setJarByClass(BreadCrumbs.class);
+		job.setJarByClass(NextClick.class);
 		job.setMapperClass(TokenizerMapper.class);
 		job.setReducerClass(NextClickReducer.class);
 		job.setOutputKeyClass(Text.class);

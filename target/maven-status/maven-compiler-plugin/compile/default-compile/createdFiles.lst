@@ -1,10 +1,10 @@
 hadoop/WordCount$IntSumReducer.class
-hadoop/BreadCrumbs.class
 hadoop/WordCount.class
-hadoop/BreadCrumbs$TokenizerMapper.class
+hadoop/NextClick$TokenizerMapper.class
+hadoop/NextClick$NextClickReducer.class
 hadoop/WordRank$Reducing.class
-hadoop/BreadCrumbs$NextClickReducer.class
 hadoop/WordRank$Mapping.class
+hadoop/NextClick.class
 hadoop/WordRank$TokenizerMapper.class
 hadoop/WordRank.class
 hadoop/WordCount$Reducing.class
