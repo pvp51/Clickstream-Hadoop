@@ -10,5 +10,6 @@ Predicting Website Navigation with MapReduce in Hadoop
 
 ## Dev Notes
 
-* Please copy dataset under src/main/resources
-* If you can figure out, for some reason the code is maven buidling at JRE 1.5 instead 1.8. Not a blocker, but good if we can resolve it.
+* Please copy dataset under src/main/resources (Ryan - just saw this now, moved and done)
+* If you can figure out, for some reason the code is maven building at JRE 1.5 instead 1.8. Not a blocker, but good if we can resolve it. (Ryan - changed the pox file for newer version)
+* Make sure your the required files are in HDFS. BreadCrumbs writes to output/ by default.
