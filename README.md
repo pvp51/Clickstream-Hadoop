@@ -2,6 +2,9 @@
 
 Predicting Website Navigation with MapReduce in Hadoop
 
+Presentation can be found
+[here](https://docs.google.com/presentation/d/1XSUvSYeoF0-qAdLf9mmImw0EtSuDcG2uYQrUlsExKPQ/edit?usp=sharing).
+
 ## Dataset
 
 This project uses the English
@@ -46,4 +49,13 @@ mvn clean install
 hadoop jar target/click-stream-0.0.1.jar hadoop.NextClick src/main/resources/clickstream-enwiki-2018-10-abridged.tsv
 ```
 
-### Script Analysis (WIP)
+### Script Analysis
+
+A python script will generate breadcrumb trails for all Wikipedia pages in
+compressed TSV format. It will also create a histogram of breadcrumb trail
+length. It reads results/next_click.tsv.gz (copy from output/next_click/part*)
+and writes to results/breadcrumbs_histogram.png and results/breacrumbs.tsv.gz.
+Numpy and matplotlib are requried for the analysis.
+```bash
+python3 scripts/breadcrumbs.py
+```
