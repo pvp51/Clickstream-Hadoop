@@ -11,13 +11,6 @@ Predicting Website Navigation with MapReduce in Hadoop
 externally, what page is most often linked to from within Wikipedia, and what
 page is most often linked to from other (referrer missing) (Parth)
 
-## Dev Notes
-
-* Please copy dataset under src/main/resources (Ryan - just saw this now, moved and
-done)
-* If you can figure out, for some reason the code is maven building at JRE 1.5
-instead 1.8. Not a blocker, but good if we can resolve it. (Ryan - changed the
-pox file for newer version)
 
 ## NextClick
 
@@ -29,7 +22,7 @@ browsing behavior.
 
 ### Compiling / Running
  
-Make sure your the required files are in HDFS and the output dir is empty
+Make sure your required files are in HDFS and the output dir is empty
 NextClick writes to output/next_click by default and takes the input TSV file
 path as the first argument.
 ```bash

@@ -1,9 +1,6 @@
 package hadoop;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Collections;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -26,7 +23,7 @@ public class NextClick {
             String[] items = value.toString().split("\t");
             String prev = items[0];
             String curr = items[1];
-            String type = items[2];
+            //String type = items[2];
             int n = Integer.parseInt(items[3]);
                 
             context.write(new Text(prev), new Text(String.format("%s\t%d",
