@@ -25,3 +25,6 @@ hs_err_pid*
 # giant tsv.gz files
 *.tsv.gz
 src/main/resources/clickstream-enwiki-2018-10.tsv.gz
+
+# huge output files
+output/*

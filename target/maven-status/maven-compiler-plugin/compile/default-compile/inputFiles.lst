@@ -1,4 +1,5 @@
-F:\Git projects\Clickstream-Hadoop\src\main\java\hadoop\TypeCount.java
-F:\Git projects\Clickstream-Hadoop\src\main\java\hadoop\NextClick.java
-F:\Git projects\Clickstream-Hadoop\src\main\java\hadoop\WordCount.java
-F:\Git projects\Clickstream-Hadoop\src\main\java\hadoop\WordRank.java
+/home/ryan/Clickstream-Hadoop/src/main/java/hadoop/TopTen.java
+/home/ryan/Clickstream-Hadoop/src/main/java/hadoop/WordRank.java
+/home/ryan/Clickstream-Hadoop/src/main/java/hadoop/TypeCount.java
+/home/ryan/Clickstream-Hadoop/src/main/java/hadoop/WordCount.java
+/home/ryan/Clickstream-Hadoop/src/main/java/hadoop/NextClick.java
