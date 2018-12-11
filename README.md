@@ -42,6 +42,24 @@ mvn clean install
 hadoop jar target/click-stream-0.0.1.jar hadoop.NextClick src/main/resources/clickstream-enwiki-2018-10-abridged.tsv
 ```
 
+## TypeCount
+
+### Description
+
+This MapReduce module determines what the most popular pages are based on referrer type: external, link within Wikipedia, or other (unknown).
+
+### Compiling / Running
+ 
+Make sure your required files are in HDFS and the output dir is empty
+TypeCount writes to output/type_count by default and takes the input TSV file
+path as the first argument.
+```bash
+hadoop fs -mkdir -p src/main/resources
+hadoop fs -copyFromLocal src/main/resources
+hadoop fs -rm -r output/type_count
+mvn clean install
+hadoop jar target/click-stream-0.0.1.jar hadoop.TypeCount src/main/resources/clickstream-enwiki-2018-10-abridged.tsv
+
 ### Script Analysis
 
 A python script will generate breadcrumb trails for all Wikipedia pages in
