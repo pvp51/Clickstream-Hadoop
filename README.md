@@ -45,7 +45,7 @@ hadoop jar target/click-stream-0.0.1.jar hadoop.NextClick src/main/resources/cli
 
 ### Description
 
-This MapReduce module determines what the most popular pages are based on referrer type: external, link within Wikipedia, or other (unknown).
+This MapReduce module determines how many pages are landed on based on referrer type: external, link within Wikipedia, or other (unknown).
 
 ### Compiling / Running
  
@@ -57,18 +57,7 @@ hadoop fs -mkdir -p src/main/resources
 hadoop fs -copyFromLocal src/main/resources
 hadoop fs -rm -r output/type_count
 mvn clean install
-hadoop jar target/click-stream-0.0.1.jar hadoop.TypeCount src/main/resources/clickstream-enwiki-2018-10-abridged.tsv
-```
-
-### Script Analysis
-
-A python script will generate breadcrumb trails for all Wikipedia pages in
-compressed TSV format. It will also create a histogram of breadcrumb trail
-length. It reads results/next_click.tsv.gz (copy from output/next_click/part*)
-and writes to results/breadcrumbs_histogram.png and results/breacrumbs.tsv.gz.
-Numpy and matplotlib are requried for the analysis.
-```bash
-python3 scripts/breadcrumbs.py
+hadoop jar target/click-stream-0.0.1.jar hadoop.TypeCount src/main/resources/clickstream-enwiki-2018-10.tsv.gz
 ```
 
 ## TopTen
