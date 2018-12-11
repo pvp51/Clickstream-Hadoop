@@ -59,6 +59,7 @@ hadoop fs -copyFromLocal src/main/resources
 hadoop fs -rm -r output/type_count
 mvn clean install
 hadoop jar target/click-stream-0.0.1.jar hadoop.TypeCount src/main/resources/clickstream-enwiki-2018-10-abridged.tsv
+```
 
 ### Script Analysis
 
